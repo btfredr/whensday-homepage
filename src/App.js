@@ -1,7 +1,20 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useState } from "react";
+
+import Navigation from "./components/Navigation";
+
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-      <h1>Hello world</h1>
+      <Router>
+        <Navigation toggle={toggle} />
+      </Router>
     </>
   );
 }
