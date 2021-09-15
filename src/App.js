@@ -1,19 +1,16 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useState } from "react";
-
 import Navigation from "./components/Navigation";
 
+import Home from "./pages/Home";
+
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
       <Router>
-        <Navigation toggle={toggle} />
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
       </Router>
     </>
   );

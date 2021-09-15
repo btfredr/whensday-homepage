@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+$primary: #010606;
+$secondary: #fff;
+$accent: red;
+
+$font: "Cairo", sans-serif;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font;
+  line-height: 1.6;
+}
