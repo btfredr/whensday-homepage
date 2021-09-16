@@ -14,11 +14,12 @@ const Footer = () => {
         <section className="footer__socialMedia">
           <div className="footer__socialMediaWrap">
             <Link to="/" className="footer__logo">
-              Whensday
+              <p className="footer__logoH1">Whensday</p>
+              <small className="footer__rights">
+                &copy; {new Date().getFullYear()} All Rights Reserved.
+              </small>
             </Link>
-            <small className="footer__rights">
-              &copy; {new Date().getFullYear()} All Rights Reserved.
-            </small>
+
             <div className="footer__socialIcons">
               <a
                 href="//www.instagram.com/whensdayod"

@@ -151,4 +151,5 @@ export const Img = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
   height: auto;
+  box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.18);
 `;
