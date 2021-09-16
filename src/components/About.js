@@ -30,7 +30,7 @@ const About = ({
                 <Subtitle darkText={darkText}>{description2}</Subtitle>
                 <BtnWrap>
                   <Button
-                    to="disc"
+                    href="#discography"
                     smooth={true}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}

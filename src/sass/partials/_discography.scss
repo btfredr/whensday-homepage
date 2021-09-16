@@ -1,0 +1,25 @@
+.discography {
+  background-color: $primary;
+  height: 100vh;
+
+  &__wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+  }
+
+  &__spotifyWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    text-align: center;
+    max-width: 1000px;
+  }
+
+  &__spotify {
+    display: block;
+    margin: 0 auto;
+  }
+}

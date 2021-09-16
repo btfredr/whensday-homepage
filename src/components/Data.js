@@ -13,7 +13,7 @@ export const homeObjOne = {
     "Getting the opportunity to work with Histibe a lot as a young artist lead to working with Joe Perez who was working at Kanye West’s creative company Donda, to create artwork for an album Histibe had spent years working on and Whensday helped creatively and writing songs.",
   imgStart: false,
   img: image1,
-  alt: "Me",
+  alt: "Whensday",
   dark: true,
   darkText: false,
 };
@@ -32,7 +32,7 @@ export const homeObjTwo = {
   buttonLabel: "Explore my discography",
   imgStart: true,
   img: image2,
-  alt: "ReactJS logo",
+  alt: "Whensday",
   dark: false,
   darkText: true,
   primary: false,
