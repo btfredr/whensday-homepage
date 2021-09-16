@@ -1,4 +1,9 @@
-import { FaInstagram, FaSpotify, FaTwitter } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaSoundcloud,
+  FaSpotify,
+  FaTwitter,
+} from "react-icons/fa";
 import { SiApplemusic, SiTidal } from "react-icons/si";
 import { Link } from "react-router-dom";
 
@@ -63,6 +68,16 @@ const Footer = () => {
                 aria-label="Apple Music"
               >
                 <SiTidal />
+              </a>
+
+              <a
+                href="https://soundcloud.com/whensdayod"
+                target="_blank"
+                className="footer__socialIconLink"
+                rel="noreferrer"
+                aria-label="SoundCloud"
+              >
+                <FaSoundcloud />
               </a>
             </div>
           </div>

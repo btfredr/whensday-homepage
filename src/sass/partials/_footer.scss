@@ -1,6 +1,8 @@
 .footer {
+  display: block;
+
   &__container {
-    background-color: #101522;
+    background-color: $third;
   }
 
   &__wrapper {

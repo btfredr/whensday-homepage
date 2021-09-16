@@ -1,0 +1,88 @@
+.hero {
+  &__container {
+    background-color: #0c0c0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &__content {
+    z-index: 3;
+    max-width: 1200px;
+    position: absolute;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    max-width: 500px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 32px;
+    }
+  }
+
+  &__p {
+    color: $secondary;
+    margin-top: 24px;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    z-index: 1;
+    display: flex;
+    border-radius: 50px;
+    text-decoration: none;
+    color: $secondary;
+    background-color: $primary;
+    padding: 1.3rem;
+    margin-top: 11rem;
+    font-weight: bold;
+    font-size: large;
+    width: 250px;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    &:hover {
+      background-color: $accent;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

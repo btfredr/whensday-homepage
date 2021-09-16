@@ -1,11 +1,10 @@
 import Footer from "../components/Footer";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
-    <div className="home">
-      <div className="home__overlay">
-        <div className="home__background"></div>
-      </div>
+    <div>
+      <Hero />
       <Footer />
     </div>
   );

@@ -1,18 +1,24 @@
+import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
+import Nav from "./components/Navigation";
+import Sidebar from "./components/Sidebar";
 
 import Home from "./pages/Home";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <>
-      <Router>
-        <Navigation />
-        <Switch>
-          <Route path="/" exact component={Home} />
-        </Switch>
-      </Router>
-    </>
+    <Router>
+      <Nav toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
