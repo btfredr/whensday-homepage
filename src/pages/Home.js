@@ -1,11 +1,13 @@
-import Footer from "../components/Footer";
+import About from "../components/About";
+import { homeObjOne, homeObjTwo } from "../components/Data";
 import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Footer />
+      <About {...homeObjOne} />
+      <About {...homeObjTwo} />
     </div>
   );
 };
