@@ -1,56 +1,170 @@
 .discography {
-  background-color: $primary;
-  padding: 0 24px;
-  justify-content: center;
-  height: 864px;
+  height: 100%;
+  &__container {
+    padding-top: 100px;
+    color: $secondary;
+    background: $primary;
+
+    @media screen and (max-width: 768px) {
+      padding: 100px 0;
+    }
+  }
+
+  &__container2 {
+    color: $primary;
+    background: $secondary;
+
+    @media screen and (max-width: 768px) {
+      padding: 100px 0;
+    }
+  }
 
   &__wrapper {
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+  }
+
+  &__column1 {
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col1;
+  }
+
+  &__column2 {
+    margin-bottom: 15px;
+    padding: 0 15px;
+    grid-area: col2;
+  }
+
+  &__row {
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    grid-template-areas: col2 col1;
+
+    @media screen and (max-width: 768px) {
+      grid-template-areas: col1 col1;
+    }
+  }
+
+  &__textWrapper {
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  &__topline {
+    color: #01bf71;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 3em;
+    margin-top: 40px;
+  }
+
+  &__btnWrap {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__button {
+    border-radius: 50px;
+    background: $primary;
+    white-space: nowrap;
+    padding: 14px 40px;
+    color: $secondary;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
     display: flex;
     justify-content: center;
-
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      background-color: $accent;
+    }
   }
 
-  &__titleWrapper {
-    max-width: 1100px;
-    padding: 1rem;
-    text-align: left;
-  }
-
-  &__title {
+  &__heading {
+    margin-bottom: 0.7em;
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 600;
     color: $secondary;
-    text-align: left;
+
+    @media screen and (max-width: 480px) {
+      font-size: 32px;
+    }
   }
 
-  &__spotifyWrapper {
-    text-align: center;
-    max-width: 1100px;
-    margin: 0 auto;
+  &__subtitle {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $secondary;
+  }
+
+  &__subtitle2 {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $primary;
+  }
+
+  &__imgWrap {
+    max-width: 500px;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    height: auto;
+    box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.18);
   }
 
   &__spotify {
+    width: 1100px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    height: 500px;
 
-    @media screen and(max-width: 1079px) {
-      width: 900px;
+    @media screen and (max-width: 1200px) {
+      width: 1060px;
+      height: 400px;
     }
 
-    @media screen and(max-width: 960px) {
-      width: 700px;
+    @media screen and (max-width: 1100px) {
+      width: 1000px;
+      height: 400px;
     }
 
-    @media screen and(max-width: 768px) {
-      width: 500px;
+    @media screen and (max-width: 1050px) {
+      width: 600px;
+      height: 400px;
     }
-    @media screen and(max-width: 480px) {
+
+    @media screen and (max-width: 600px) {
       width: 300px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

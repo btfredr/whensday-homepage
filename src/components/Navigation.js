@@ -84,8 +84,9 @@ const NavLinks = styled.a`
   cursor: pointer;
   font-weight: bold;
 
-  &.active {
-    border-bottom: 3px solid #01bf71;
+  &:hover {
+    color: #7b0d1e;
+    transition: 0.2s ease-in-out;
   }
 `;
 
@@ -115,25 +116,25 @@ const Nav = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks href="#home" activeClass="navbar__active">
+                <NavLinks href="#home" activeClass="active">
                   Home
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks href="#about" activeClass="navbar__active">
+                <NavLinks href="#about" activeClass="active">
                   About
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks href="#discography" activeClass="navbar__active">
+                <NavLinks href="#discography" activeClass="active">
                   Discography
                 </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks href="#contact" activeClass="navbar__active">
+                <NavLinks href="#contact" activeClass="active">
                   Contact
                 </NavLinks>
               </NavItem>

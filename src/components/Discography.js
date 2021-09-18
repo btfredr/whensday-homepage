@@ -1,35 +1,42 @@
 import styled from "styled-components";
+import Releases from "./albums/Releases";
 
-const About = () => {
+const Discography = () => {
   return (
-    <div className="about" id="discography">
-      <div className="about__container">
-        <div className="about__wrapper">
-          <AboutRow>
-            <div className="about__column1">
-              <div className="about__textWrapper">
-                <h1 className="about__heading">Discography</h1>
-                <p className="about__topline">The Essentials</p>
-                <iframe
-                  src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO38vomF?theme=0"
-                  frameBorder="0"
-                  allowtransparency="true"
-                  allow="encrypted-media"
-                  title="Spotify"
-                  className="discography__spotify"
-                ></iframe>
+    <div className="discography" id="discography">
+      <div className="discography__container">
+        <div className="discography__wrapper">
+          <DiscographyRow>
+            <div className="discography__column1">
+              <div className="discography__textWrapper">
+                <h1 className="discography__heading">Discography</h1>
+                <p className="discography__topline">The Essentials</p>
+                <div className="discography__spotifyContainer">
+                  <iframe
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO38vomF?theme=0"
+                    frameBorder="0"
+                    allowtransparency="true"
+                    allow="encrypted-media"
+                    title="Spotify"
+                    className="discography__spotify"
+                  />
+                </div>
+                <div>
+                  <p className="releases__topline">The Albums</p>
+                  <Releases />
+                </div>
               </div>
             </div>
-          </AboutRow>
+          </DiscographyRow>
         </div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Discography;
 
-export const AboutContainer = styled.div`
+export const DiscographyContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#faf9f6" : "#010606")};
 
@@ -38,7 +45,7 @@ export const AboutContainer = styled.div`
   }
 `;
 
-const AboutWrapper = styled.div`
+const discographyWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 860px;
@@ -50,7 +57,7 @@ const AboutWrapper = styled.div`
   justify-content: center;
 `;
 
-export const AboutRow = styled.div`
+export const DiscographyRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -63,7 +70,7 @@ export const AboutRow = styled.div`
   }
 `;
 
-export const AboutRow2 = styled.div`
+export const discographyRow2 = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
