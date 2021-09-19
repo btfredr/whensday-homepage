@@ -132,12 +132,6 @@ const Nav = ({ toggle }) => {
                   Discography
                 </NavLinks>
               </NavItem>
-
-              <NavItem>
-                <NavLinks href="#contact" activeClass="active">
-                  Contact
-                </NavLinks>
-              </NavItem>
             </NavMenu>
           </NavbarContainer>
         </Navbar>

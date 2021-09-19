@@ -18,9 +18,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink href="#discography" onClick={toggle}>
             Discography
           </SidebarLink>
-          <SidebarLink href="#contact" onClick={toggle}>
-            Contact
-          </SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

@@ -45,18 +45,6 @@ export const DiscographyContainer = styled.div`
   }
 `;
 
-const discographyWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 860px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
-`;
-
 export const DiscographyRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
@@ -81,39 +69,6 @@ export const discographyRow2 = styled.div`
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col2' 'col1'` : `'col2 col2' 'col1 col1'`};
   }
-`;
-
-const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col1;
-`;
-
-const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
-`;
-
-const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
-  padding-bottom: 60px;
-`;
-
-const TopLine = styled.p`
-  color: #01bf71;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-`;
-
-const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
 `;
 
 export const Heading = styled.h1`

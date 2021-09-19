@@ -1,7 +1,6 @@
 .releases {
   display: flex;
   max-width: 1100px;
-  margin-top: 50px;
 
   &__topline {
     color: #01bf71;
@@ -18,7 +17,7 @@
     max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
